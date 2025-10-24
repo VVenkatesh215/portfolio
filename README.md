@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a simple portfolio website created using HTML, CSS, and lightweight JavaScript. The website showcases the skills, experience, and projects of an individual, making it suitable for presenting to potential employers or clients.
+This is a simple portfolio website created using HTML, CSS, and JS. The website showcases the skills, experience, and projects of an individual, making it suitable for presenting to potential employers or clients.
 
 ## Project Structure
 
@@ -43,7 +43,4 @@ portfolio-website
 - CSS
 - JavaScript
 
-## Author
-
-Vepada Venkatesh
 
