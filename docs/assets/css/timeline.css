@@ -1,0 +1,205 @@
+/* ===================================
+   Experience Timeline Styles - Apple Inspired
+   =================================== */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) 0;
+}
+
+/* Timeline Item */
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--spacing-4xl);
+    width: 100%;
+}
+
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Dot */
+.timeline__dot {
+    display: none; /* Hidden on mobile by default */
+}
+
+/* Timeline Content */
+.timeline__content {
+    position: relative;
+}
+
+.timeline__date {
+    display: inline-block;
+    background: linear-gradient(135deg, #7303c0 0%, #ec38bc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.timeline__title {
+    font-size: var(--font-size-2xl);
+    color: #1d1d1f;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.timeline__company {
+    color: #424245;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+}
+
+.timeline__location {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.timeline__list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-text-gray);
+    line-height: 1.6;
+}
+
+.timeline__list li {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+    position: relative;
+}
+
+.timeline__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7303c0 0%, #ec38bc 100%);
+}
+
+/* Mobile Timeline Styles */
+@media screen and (max-width: 767px) {
+    .timeline {
+        padding-left: var(--spacing-xl);
+    }
+
+    .timeline__item::before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 0;
+        bottom: calc(-1 * var(--spacing-4xl));
+        width: 2px;
+        background: linear-gradient(180deg, 
+            rgba(115, 3, 192, 0.5) 0%, 
+            rgba(236, 56, 188, 0.5) 100%);
+    }
+
+    .timeline__item:last-child::before {
+        display: none;
+    }
+
+    .timeline__item::after {
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7303c0 0%, #ec38bc 100%);
+        border: 3px solid var(--color-bg-dark);
+        box-shadow: 0 0 0 4px rgba(236, 56, 188, 0.2);
+        z-index: 1;
+    }
+}
+
+/* Desktop Timeline Styles */
+@media screen and (min-width: 768px) {
+    .timeline {
+        position: relative;
+    }
+
+    /* Center vertical line with gradient */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(180deg, 
+            rgba(115, 3, 192, 0.3) 0%, 
+            rgba(236, 56, 188, 0.6) 50%,
+            rgba(115, 3, 192, 0.3) 100%);
+        transform: translateX(-50%);
+    }
+
+    .timeline__item {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: calc(50% + 50px);
+        margin-bottom: var(--spacing-4xl);
+    }
+
+    .timeline__item--left {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: calc(50% + 50px);
+    }
+
+    .timeline__content {
+        max-width: 520px;
+        width: 100%;
+    }
+
+    /* Timeline Dot for Desktop - Enhanced */
+    .timeline__dot {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 16px;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7303c0 0%, #ec38bc 100%);
+        border: 4px solid var(--color-bg-dark);
+        box-shadow: 0 0 0 6px rgba(236, 56, 188, 0.15);
+        z-index: 10;
+        transition: all var(--transition-base);
+    }
+
+    .timeline__item:hover .timeline__dot {
+        transform: translateX(-50%) scale(1.3);
+        box-shadow: 0 0 0 10px rgba(236, 56, 188, 0.25),
+                    0 0 20px rgba(236, 56, 188, 0.4);
+    }
+}
+
+/* Large Desktop Adjustments */
+@media screen and (min-width: 1024px) {
+    .timeline__content {
+        max-width: 550px;
+    }
+
+    .timeline__item {
+        padding-right: calc(50% + 60px);
+    }
+
+    .timeline__item--left {
+        padding-right: 0;
+        padding-left: calc(50% + 60px);
+    }
+}

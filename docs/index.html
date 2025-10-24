@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vepada Venkatesh - Data Engineer Portfolio. Specialized in Azure, PySpark, and building scalable data pipelines.">
+    <meta name="keywords" content="Data Engineer, Data Analyst, PySpark, Azure, Python, Portfolio, Software Developer, Power BI">
+    <meta name="author" content="Vepada Venkatesh">
+    <title>Vepada Venkatesh - Data Engineer & Analyst Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="assets/css/effects.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__brand">Vepada Venkatesh</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <h1 class="hero__title" data-animation="fade-up">Vepada Venkatesh</h1>
+                <p class="hero__subtitle" data-animation="fade-up">Aspiring Data Engineer | Data Analyst | Software Developer</p>
+                <p class="hero__description" data-animation="fade-up">
+                    Based in Visakhapatnam, Andhra Pradesh, India. Passionate about building scalable data pipelines, performing data analytics, and developing efficient software solutions.
+                </p>
+                <div class="hero__social" data-animation="fade-up">
+                    <a href="https://www.linkedin.com/in/vepada-venkatesh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/VVenkatesh215" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/u/vepadavenkatesh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode Profile">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hero__cta" data-animation="fade-up" style="margin-top: 2rem;">
+                    <a href="https://drive.google.com/file/d/1M_vtYggbqmyGHD97ZdIugnLiKWF0rvyD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">About Me</h2>
+                <div class="about__content" data-animation="fade-up">
+                    <p class="about__description">
+                        Enthusiastic Data Engineering and Analytics enthusiast pursuing B.Tech in Computer Science at IIIT Manipur (2022–2026). 
+                        Experienced with Azure, PySpark, and Power BI, I focus on creating end-to-end ETL pipelines, automating data workflows, 
+                        and uncovering insights through visualization and data storytelling. Passionate about leveraging cloud technologies 
+                        and modern data frameworks to build efficient, scalable, and impactful solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">Experience</h2>
+                <div class="timeline">
+
+                    <div class="timeline__item timeline__item--right" data-animation="fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content card">
+                            <span class="timeline__date">May 2025 – Jul 2025</span>
+                            <h3 class="timeline__title">Data Engineering Intern</h3>
+                            <p class="timeline__company">Celebal Technologies CSI</p>
+                            <p class="timeline__location">Remote</p>
+                            <ul class="timeline__list">
+                                <li>Engineered data ingestion pipelines to process diverse file formats from Azure Data Lake Storage Gen2 into Azure Databricks.</li>
+                                <li>Standardized data storage using managed Delta tables and optimized query performance using CTAS and temporary views.</li>
+                                <li>Explored Azure Data Factory with Copy Activity, Triggers, and API-based ingestion scenarios.</li>
+                                <li>Implemented GitHub version control to enable collaborative and maintainable project development.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">Education</h2>
+                <div class="education__grid">
+
+                    <div class="education__item card" data-animation="fade-up">
+                        <span class="education__period">2022 - 2026</span>
+                        <h3 class="education__degree">B.Tech in Computer Science and Engineering</h3>
+                        <p class="education__institution">Indian Institute of Information Technology, Manipur</p>
+                        <p class="education__gpa">CGPA: 8.17 / 10</p>
+                    </div>
+
+                    <div class="education__item card" data-animation="fade-up">
+                        <span class="education__period">2020 - 2022</span>
+                        <h3 class="education__degree">Higher Secondary Education</h3>
+                        <p class="education__institution">Sri Chaitanya Junior College, Visakhapatnam</p>
+                        <p class="education__gpa">Percentage: 95.6%</p>
+                    </div>
+
+                    <div class="education__item card" data-animation="fade-up">
+                        <span class="education__period">2019 - 2020</span>
+                        <h3 class="education__degree">Secondary Education</h3>
+                        <p class="education__institution">Sri Chaitanya EM School, Visakhapatnam</p>
+                        <p class="education__gpa">Percentage: 99.8%</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">Technical Skills</h2>
+                <div class="skills__grid">
+
+                    <div class="skills__category card" data-animation="fade-up">
+                        <h3 class="skills__category-title">Programming</h3>
+                        <div class="skills__tags">
+                            <span class="tag"><i class="devicon-python-plain"></i> Python</span>
+                            <span class="tag"><i class="devicon-mysql-plain"></i> SQL</span>
+                            <span class="tag"><i class="devicon-cplusplus-plain"></i> C++</span>
+                            <span class="tag"><i class="devicon-c-plain"></i> C</span>
+                            <span class="tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skills__category card" data-animation="fade-up">
+                        <h3 class="skills__category-title">Data & Analytics</h3>
+                        <div class="skills__tags">
+                            <span class="tag"><i class="devicon-apachespark-plain"></i> PySpark</span>
+                            <span class="tag"><i class="devicon-pandas-plain"></i> Pandas</span>
+                            <span class="tag"><i class="devicon-numpy-plain"></i> NumPy</span>
+                            <span class="tag"><i class="fas fa-chart-bar"></i> Power BI</span>
+                            <span class="tag"><i class="fas fa-database"></i> Alteryx</span>
+                            <span class="tag"><i class="fas fa-file-excel"></i> Excel</span>
+                            <span class="tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                            <span class="tag"><i class="devicon-django-plain"></i> Django</span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skills__category card" data-animation="fade-up">
+                        <h3 class="skills__category-title">Cloud & Tools</h3>
+                        <div class="skills__tags">
+                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Data Factory</span>
+                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Databricks</span>
+                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Synapse</span>
+                            <span class="tag"><i class="devicon-azure-plain"></i> ADLS Gen2</span>
+                            <span class="tag"><i class="devicon-git-plain"></i> Git</span>
+                            <span class="tag"><i class="devicon-github-plain"></i> GitHub</span>
+                            <span class="tag"><i class="devicon-vscode-plain"></i> VS Code</span>
+                            <span class="tag"><i class="devicon-jupyter-plain"></i> Jupyter Notebook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section__title" data-animation="fade-up">Projects</h2>
+            <div class="projects__grid">
+
+            
+            <div class="project__item card" data-animation="fade-up">
+                <a href="https://github.com/VVenkatesh215/Azure-ETL-Pipeline" target="_blank" class="github__icon">
+                <i class="fab fa-github"></i>
+                </a>
+                <h3 class="project__title">AdventureWorks Azure ETL Pipeline</h3>
+                <p class="project__description">
+                Built an end-to-end ETL pipeline using Azure Data Lake Storage Gen2, Azure Data Factory, Databricks, 
+                and Synapse Analytics. Implemented Medallion architecture (Bronze, Silver, Gold) to automate and optimize data pipelines.
+                </p>
+                <div class="project__tags">
+                <span class="tag">Azure</span>
+                <span class="tag">Data Factory</span>
+                <span class="tag">Databricks</span>
+                <span class="tag">Synapse</span>
+                <span class="tag">ETL</span>
+                </div>
+            </div>
+
+                    <div class="project__item card" data-animation="fade-up">
+                        <a href="https://github.com/VVenkatesh215/e-com-customer-behavior-analysis" target="_blank" class="github__icon" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <h3 class="project__title">E-commerce Customer Behaviour Analysis</h3>
+                        <p class="project__description">
+                            Complete end-to-end Data Analytics project analyzing retail customer shopping trends using SQL, Python, and Power BI 
+                            to derive insights and visualize key business metrics.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project__item card" data-animation="fade-up">
+                        <a href="https://github.com/VVenkatesh215/walmart-sales-insights" target="_blank" class="github__icon" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <h3 class="project__title">Walmart Sales Insights</h3>
+                        <p class="project__description">
+                            Built data analysis and visualization dashboards using Python, SQL, and Power BI to uncover key business patterns 
+                            and improve decision-making efficiency.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">EDA</span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="project__item card" data-animation="fade-up">
+                        <a href="https://github.com/VVenkatesh215/cityvibes-explorer" target="_blank" class="github__icon" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <h3 class="project__title">CityVibes Explorer</h3>
+                        <p class="project__description">
+                            A Python-based CLI tool combining five public APIs to deliver a real-time snapshot of a city's vibe — weather, top news, 
+                            financial indicators, tourist attractions, and local events.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">CLI</span>
+                            <span class="tag">Data Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="project__item card" data-animation="fade-up">
+                        <a href="https://github.com/VVenkatesh215/notes-detector-cnn" target="_blank" class="github__icon" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <h3 class="project__title">Notes Detector</h3>
+                        <p class="project__description">
+                            Deep learning based system that automatically detects handwritten notes captured with a mobile camera and deletes them efficiently, 
+                            saving storage and manual effort post exams.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Keras</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="project__item card" data-animation="fade-up">
+                        <a href="https://github.com/VVenkatesh215/managify" target="_blank" class="github__icon" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <h3 class="project__title">Managify - Employee Management System</h3>
+                        <p class="project__description">
+                            A comprehensive C++ application that manages employee records, leaves, and payroll with role-based access for administrators and employees, 
+                            enabling seamless HR data management and report generation.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">File Handling</span>
+                            <span class="tag">System Design</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">Certifications</h2>
+                <div class="certifications__grid">
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">IBM Introduction to Data Engineering</h3>
+                    </div>
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">Infosys Python Foundation</h3>
+                    </div>
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">Quantium Data Analytics Job Simulation</h3>
+                    </div>
+                    
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">Alteryx Foundational Micro-Credential</h3>
+                    </div>
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">Alteryx Designer Core Certification</h3>
+                    </div>
+                    <div class="certification__item card" data-animation="fade-up">
+                        <h3 class="certification__title">MongoDB – Introduction to MongoDB</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title" data-animation="fade-up">Get In Touch</h2>
+                <p class="contact__description" data-animation="fade-up">
+                    I'm actively seeking internship and full-time opportunities. Have a question or want to connect? Feel free to send me a message!
+                </p>
+
+                <div class="contact__info" data-animation="fade-up">
+                    <a href="mailto:vepadavenkatesh215@gmail.com" class="contact__link">
+                        📧 vepadavenkatesh215@gmail.com
+                    </a>
+                    <span class="contact__divider">|</span>
+                    <a href="tel:+918639901371" class="contact__link">📞 +91 86399 01371</a>
+                </div>
+
+                <form action="https://formspree.io/f/mblzndla" method="POST" class="contact__form" data-animation="fade-up">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="visitor-type" class="form__label">I am a...</label>
+                        <select id="visitor-type" name="visitor-type" class="form__select" required>
+                            <option value="" disabled selected>Select your role</option>
+                            <option value="recruiter">Recruiter</option>
+                            <option value="student">Student</option>
+                            <option value="visitor">Visitor</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+
+                    <div class="form__status">
+                        <p class="form__success">Thank you! Your message has been sent.</p>
+                        <p class="form__error">Oops! There was a problem. Please try again.</p>
+                    </div>
+                    
+                    <div class="form__group">
+                        <button type="submit" class="button form__button">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2025 Vepada Venkatesh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg class="scroll-top__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
