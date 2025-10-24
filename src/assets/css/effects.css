@@ -38,10 +38,10 @@
    =================================== */
 @keyframes pulseGlow {
     0%, 100% {
-        box-shadow: 0 0 0 0 rgba(191, 90, 242, 0.7);
+        box-shadow: 0 0 0 0 rgba(236, 56, 188, 0.7);
     }
     50% {
-        box-shadow: 0 0 0 15px rgba(191, 90, 242, 0);
+        box-shadow: 0 0 0 15px rgba(236, 56, 188, 0);
     }
 }
 
@@ -83,11 +83,11 @@
 .gradient-animated {
     background: linear-gradient(
         90deg,
-        #667EEA 0%,
-        #764BA2 25%,
-        #BF5AF2 50%,
-        #0A84FF 75%,
-        #667EEA 100%
+        #03001e 0%,
+        #7303c0 25%,
+        #ec38bc 50%,
+        #fdeff9 75%,
+        #03001e 100%
     );
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -130,7 +130,7 @@
     border-radius: 50%;
     background: radial-gradient(
         circle,
-        rgba(191, 90, 242, 0.3) 0%,
+        rgba(236, 56, 188, 0.3) 0%,
         transparent 70%
     );
     pointer-events: none;
@@ -226,9 +226,9 @@
 
 .mesh-gradient-bg {
     background: 
-        radial-gradient(at 20% 30%, rgba(102, 126, 234, 0.1) 0px, transparent 50%),
-        radial-gradient(at 80% 20%, rgba(191, 90, 242, 0.1) 0px, transparent 50%),
-        radial-gradient(at 60% 80%, rgba(10, 132, 255, 0.1) 0px, transparent 50%);
+        radial-gradient(at 20% 30%, rgba(115, 3, 192, 0.1) 0px, transparent 50%),
+        radial-gradient(at 80% 20%, rgba(236, 56, 188, 0.1) 0px, transparent 50%),
+        radial-gradient(at 60% 80%, rgba(253, 239, 249, 0.05) 0px, transparent 50%);
     background-size: 200% 200%;
     animation: meshGradient 15s ease infinite;
 }
@@ -321,7 +321,7 @@
 
 .glow-on-scroll.in-view {
     filter: brightness(1.1);
-    box-shadow: 0 0 30px rgba(191, 90, 242, 0.3);
+    box-shadow: 0 0 30px rgba(236, 56, 188, 0.3);
 }
 
 /* ===================================
