@@ -353,7 +353,7 @@ img {
 .nav__toggle-icon {
     width: 25px;
     height: 3px;
-    background-color: var(--color-white);
+    background: linear-gradient(135deg, #7303c0 0%, #ec38bc 100%);
     transition: all var(--transition-base);
     border-radius: 2px;
 }
@@ -1029,7 +1029,7 @@ img {
         top: 80px;
         left: var(--spacing-md);
         right: var(--spacing-md);
-        background: rgba(0, 0, 0, 0.95);
+        background: rgb(255, 255, 255);
         backdrop-filter: saturate(180%) blur(var(--blur-nav));
         -webkit-backdrop-filter: saturate(180%) blur(var(--blur-nav));
         border: 1px solid var(--color-border-light);
