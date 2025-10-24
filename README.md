@@ -47,6 +47,3 @@ portfolio-website
 
 Vepada Venkatesh
 
-## License
-
-This project is licensed under the MIT License.
