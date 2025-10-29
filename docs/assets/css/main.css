@@ -730,6 +730,16 @@ img {
     height: 20px;
 }
 
+.contact__icon-img {
+    display: inline-block;
+    width: 1em; /* match the current font-size of the link */
+    height: 1em;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
 .contact__divider {
     color: var(--color-text-muted);
     font-weight: 300;

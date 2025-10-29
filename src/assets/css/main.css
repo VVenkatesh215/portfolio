@@ -731,10 +731,13 @@ img {
 }
 
 .contact__icon-img {
-    width: 20px;
-    height: 20px;
+    display: inline-block;
+    width: 1em; /* match the current font-size of the link */
+    height: 1em;
     object-fit: contain;
     flex-shrink: 0;
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .contact__divider {
