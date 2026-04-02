@@ -48,8 +48,9 @@
 
         <section class="hero section" id="home">
             <div class="hero__container container">
+                <p class="hero_subtitle" data-animation="fade-up">I'm</p>
                 <h1 class="hero__title" data-animation="fade-up">Vepada Venkatesh</h1>
-                <p class="hero__subtitle" data-animation="fade-up">Aspiring Data Engineer | Data Analyst | Software Developer</p>
+                <p class="hero__subtitle" data-animation="fade-up">An Aspiring Data Engineer | Data Analyst </p>
                 <p class="hero__description" data-animation="fade-up">
                     Based in Visakhapatnam, Andhra Pradesh, India.
                 </p>
@@ -72,7 +73,7 @@
                 </div>
 
                 <div class="hero__cta" data-animation="fade-up" style="margin-top: 2rem;">
-                    <a href="https://drive.google.com/file/d/1UFBFb2S3PH1873U0TAaSYyIm616kgHvr/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button">
+                    <a href="Vepada_Venkatesh_Resume_Apr26.pdf" download class="button">
                         Download Resume
                     </a>
                 </div>
@@ -98,18 +99,34 @@
                 <h2 class="section__title" data-animation="fade-up">Experience</h2>
                 <div class="timeline">
 
+                    <div class="timeline__item timeline__item--left" data-animation="fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content card">
+                            <span class="timeline__date">Nov 2025 – May 2026</span>
+                            <h3 class="timeline__title">Ven Analytics</h3>
+                            <p class="timeline__company">Data Engineering Intern</p>
+                            <p class="timeline__location">Mumbai</p>
+                            <ul class="timeline__list">
+                                <li>Architected and optimized PySpark processing workflows, achieving an 30% reduction in latency for 10M+ records through strategic caching, data structure reconfiguration, parallelized processing and BigQuery I/O operations.</li>
+                                <li>Re-engineered a robust data ingestion into a fully automated, data-structure-driven pipeline; eliminated manual intervention in promoting data from BigQuery Dev to Prod, achieving a zero-touch deployment for BARC datasets.</li>
+                                <li>Managed the full SDLC for diverse data projects, including requirements specification, ETL development, unit testing, and comprehensive documentation to ensure high fidelity data delivery.</li>
+                                <li>Facilitated technical handovers and client-facing interaction, effectively translating complex business logic into scalable PySpark code and ensuring seamless deployment of finalized data products.</li>
+                                <li>Designed multi-cloud ingestion frameworks utilizing Azure Data Factory (ADF) and GCP Storage Transfer Service, successfully orchestrating automated data movement from SQL Server to cloud-native environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="timeline__item timeline__item--right" data-animation="fade-up">
                         <div class="timeline__dot"></div>
                         <div class="timeline__content card">
                             <span class="timeline__date">May 2025 – Jul 2025</span>
-                            <h3 class="timeline__title">Data Engineering Intern</h3>
-                            <p class="timeline__company">Celebal Technologies CSI</p>
+                            <h3 class="timeline__title">Celebal Technologies</h3>
+                            <p class="timeline__company">Data Engineering Intern</p>
                             <p class="timeline__location">Remote</p>
                             <ul class="timeline__list">
-                                <li>Engineered data ingestion pipelines to process diverse file formats from Azure Data Lake Storage Gen2 into Azure Databricks.</li>
-                                <li>Standardized data storage using managed Delta tables and optimized query performance using CTAS and temporary views.</li>
-                                <li>Explored Azure Data Factory with Copy Activity, Triggers, and API-based ingestion scenarios.</li>
-                                <li>Implemented GitHub version control to enable collaborative and maintainable project development.</li>
+                                <li>Engineered data ingestion pipelines to process diverse file formats from Azure Data Lake Storage Gen2 into Azure Databricks, leveraging CTAS and temporary views for efficient loading.</li>
+                                <li>Standardized data storage and improved data quality by designing managed Delta tables and a generic function.</li>
+                                <li>Explored Azure Data Factory through real world scenarios, gaining hands on experience with different activities.</li>
                             </ul>
                         </div>
                     </div>
@@ -127,7 +144,7 @@
                         <span class="education__period">2022 - 2026</span>
                         <h3 class="education__degree">B.Tech in Computer Science and Engineering</h3>
                         <p class="education__institution">Indian Institute of Information Technology, Manipur</p>
-                        <p class="education__gpa">CGPA: 8.17 / 10</p>
+                        <p class="education__gpa">CGPA: 8.24 / 10</p>
                     </div>
 
                     <div class="education__item card" data-animation="fade-up">
@@ -156,11 +173,11 @@
                     <div class="skills__category card" data-animation="fade-up">
                         <h3 class="skills__category-title">Programming</h3>
                         <div class="skills__tags">
-                            <span class="tag"><i class="devicon-python-plain"></i> Python</span>
-                            <span class="tag"><i class="devicon-mysql-plain"></i> SQL</span>
-                            <span class="tag"><i class="devicon-cplusplus-plain"></i> C++</span>
-                            <span class="tag"><i class="devicon-c-plain"></i> C</span>
-                            <span class="tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                            <span class="tag"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span class="tag"><i class="devicon-mysql-plain colored"></i> SQL</span>
+                            <span class="tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                            <span class="tag"><i class="devicon-c-plain colored"></i> C</span>
+                            <span class="tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
                         </div>
                     </div>
 
@@ -168,14 +185,15 @@
                     <div class="skills__category card" data-animation="fade-up">
                         <h3 class="skills__category-title">Data & Analytics</h3>
                         <div class="skills__tags">
-                            <span class="tag"><i class="devicon-apachespark-plain"></i> PySpark</span>
-                            <span class="tag"><i class="devicon-pandas-plain"></i> Pandas</span>
-                            <span class="tag"><i class="devicon-numpy-plain"></i> NumPy</span>
+                            <span class="tag"><i class="devicon-apachespark-plain colored"></i> PySpark</span>
+                            <span class="tag"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                            <span class="tag"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                            <span class="tag"><i class="devicon-numpy-plain colored"></i> NumPy</span>
                             <span class="tag"><i class="fas fa-chart-bar"></i> Power BI</span>
                             <span class="tag"><i class="fas fa-database"></i> Alteryx</span>
                             <span class="tag"><i class="fas fa-file-excel"></i> Excel</span>
-                            <span class="tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
-                            <span class="tag"><i class="devicon-django-plain"></i> Django</span>
+                            <span class="tag"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                            <span class="tag"><i class="devicon-django-plain colored"></i> Django</span>
                         </div>
                     </div>
 
@@ -183,14 +201,18 @@
                     <div class="skills__category card" data-animation="fade-up">
                         <h3 class="skills__category-title">Cloud & Tools</h3>
                         <div class="skills__tags">
-                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Data Factory</span>
-                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Databricks</span>
-                            <span class="tag"><i class="devicon-azure-plain"></i> Azure Synapse</span>
-                            <span class="tag"><i class="devicon-azure-plain"></i> ADLS Gen2</span>
-                            <span class="tag"><i class="devicon-git-plain"></i> Git</span>
+                            <span class="tag"><i class="devicon-azure-plain colored"></i> Azure Data Factory</span>
+                            <span class="tag"><i class="devicon-azure-plain colored"></i> Azure Databricks</span>
+                            <span class="tag"><i class="devicon-azure-plain colored"></i> Azure Synapse</span>
+                            <span class="tag"><i class="devicon-azure-plain colored"></i> ADLS Gen2</span>
+                            <span class="tag"><i class="fas fa-cloud"></i> Google BigQuery</span>
+                            <span class="tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+                            <span class="tag"><i class="devicon-git-plain colored"></i> Git</span>
                             <span class="tag"><i class="devicon-github-plain"></i> GitHub</span>
-                            <span class="tag"><i class="devicon-vscode-plain"></i> VS Code</span>
-                            <span class="tag"><i class="devicon-jupyter-plain"></i> Jupyter Notebook</span>
+                            <span class="tag"><i class="devicon-gitlab-plain colored"></i> GitLab</span>
+                            <span class="tag"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                            <span class="tag"><i class="devicon-jupyter-plain colored"></i> Jupyter Notebook</span>
+                            <span class="tag"><i class="devicon-latex-plain colored"></i> LaTeX</span>
                         </div>
                     </div>
                 </div>
@@ -205,7 +227,27 @@
 
             
             <div class="project__item card" data-animation="fade-up">
-                <a href="https://github.com/VVenkatesh215/Azure-ETL-Pipeline" target="_blank" class="github__icon">
+                <a href="https://github.com/VVenkatesh215/nyctaxi-de-e2e-project" target="_blank" class="github__icon">
+                <i class="fab fa-github"></i>
+                </a>
+                <h3 class="project__title">NYC Taxi Azure End-to-End Pipeline</h3>
+                <p class="project__description">
+                Engineered a dynamic ETL pipeline using Azure Data Factory (ADF) to ingest NYC Green Taxi data from REST APIs into ADLS Gen2. 
+                Implemented a Medallion Architecture (Bronze, Silver, Gold) to transform into business-ready Delta Tables via PySpark; 
+                configured Unity Catalog for fine-grained governance using Azure Managed Identities and Service Principals.
+                </p>
+                <div class="project__tags">
+                <span class="tag">Azure Data Lake Storage Gen 2</span>
+                <span class="tag">Azure Data Factory</span>
+                <span class="tag">PySpark</span>
+                <span class="tag">Databricks</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Delta Lake</span>
+                </div>
+            </div>
+
+            <div class="project__item card" data-animation="fade-up">
+                <a href="https://github.com/VVenkatesh215/adventureworks-data-pipelines-e2e" target="_blank" class="github__icon">
                 <i class="fab fa-github"></i>
                 </a>
                 <h3 class="project__title">AdventureWorks Azure ETL Pipeline</h3>
@@ -222,26 +264,30 @@
                 </div>
             </div>
 
+
+
+
                     <div class="project__item card" data-animation="fade-up">
                         <a href="https://github.com/VVenkatesh215/fintrack-ai-powered-expense-tracker" target="_blank" class="github__icon" aria-label="View on GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <h3 class="project__title">FinTrack</h3>
+                        <h3 class="project__title">FinTrack - AI Powered Finance Tracker</h3>
                         <p class="project__description">
-                            Developed an AI powered finance tracker featuring secure multi-user authentication. 
-                            Implemented full CRUD operations with real time balance synchronization and interactive Plotly visualizations for trend analysis.
+                            Developed an AI powered personal finance tracker with secure multi-user authentication using SHA256 hashing and SQLite, 
+                            enabling isolated data storage and complete transaction privacy for concurrent users. 
+                            Implemented full CRUD operations with real time balance synchronization, automated category based expense classification, 
+                            and interactive Plotly visualizations for expense trends and income analysis across multiple timeframes.
                         </p>
                         <div class="project__tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Data Processing</span>
+                            <span class="tag">Streamlit</span>
                             <span class="tag">SQLite</span>
-                            <span class="tag">AI</span>
+                            <span class="tag">Pandas</span>
                             <span class="tag">Plotly</span>
-                            <span class="tag">GUI</span>
                         </div>
                     </div>
 
-                    <div class="project__item card" data-animation="fade-up">
+                    <!-- <div class="project__item card" data-animation="fade-up">
                         <a href="https://github.com/VVenkatesh215/e-com-customer-behavior-analysis" target="_blank" class="github__icon" aria-label="View on GitHub">
                             <i class="fab fa-github"></i>
                         </a>
@@ -256,7 +302,7 @@
                             <span class="tag">Power BI</span>
                             <span class="tag">Data Analytics</span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="project__item card" data-animation="fade-up">
                         <a href="https://github.com/VVenkatesh215/walmart-sales-insights" target="_blank" class="github__icon" aria-label="View on GitHub">
                             <i class="fab fa-github"></i>
