@@ -84,9 +84,9 @@
     background: linear-gradient(
         90deg,
         #000000 0%,
-        #FFD700 25%,
-        #FFC107 50%,
-        #FFFDE7 75%,
+        #FF8C00 25%,
+        #FF9500 50%,
+        #FFE4CC 75%,
         #000000 100%
     );
     background-size: 200% 200%;
